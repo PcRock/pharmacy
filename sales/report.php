@@ -129,8 +129,8 @@
                                                         <td colspan="2">
                                                             <ul class="list-unstyled">
                                                                 
-                                                                <li><h6><strong>TOTAL CREDIT: N<?php echo number_format($items->getUserSales($_SESSION['username'])) ?></strong></h6></li>
-                                                                <li><h6><strong>GRAND TOTAL: N<?php echo number_format($items->getUserSales($_SESSION['username']) - $items->getUserExpensesCost($_SESSION['username']) ) ?></strong></h6></li>
+                                                                <li><h6><strong>TOTAL CREDIT: N<?php echo number_format($json_data->amount_income + $items->getUserSales($_SESSION['username'])) ?></strong></h6></li>
+                                                                <li><h6><strong>GRAND TOTAL: N<?php echo number_format($json_data->amount_income + $items->getUserSales($_SESSION['username']) - $items->getUserExpensesCost($_SESSION['username']) ) ?></strong></h6></li>
                                                             </ul>
                                                         </td>
                                                         <td>
